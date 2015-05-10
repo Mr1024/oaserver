@@ -30,7 +30,16 @@ server.listen(8080);
 var socket = io.listen(server);
 socket.on('connection', function(socket) {
     socket.on('message', function(data) {
-    	socket.send('message:'+data);
-        console.log("收到"+data);
+        socket.emit("test", "服务区视距");
+        socket.send('message:' + data);
+        console.log("收到" + data);
+    });
+    socket.on("test", function(data) {
+        socket.emit("test", "服务区视距");
+        console.log("收到" + data);
+    });
+    socket.on("serverstatus", function(data) {
+        socket.emit("clientstatus", {});
+        console.log("lastId" + data);
     });
 });
