@@ -42,4 +42,17 @@ socket.on('connection', function(socket) {
         socket.emit("clientstatus", {});
         console.log("lastId" + data);
     });
+
+    //获取账户信息
+    socket.on("getInfoReq", function(data) {
+    	console.log(data);
+    	var username= data.name;
+    	var cookie=data.cookie;
+    	var lastId= data.lastId;
+    	if(cookie=="123"){
+    		socket.emit("getInfoRes",{name:username,password:"123",lastId:"123"});
+    	}else{
+    		socket.emit("getInfoRes",{});
+    	}
+    });
 });

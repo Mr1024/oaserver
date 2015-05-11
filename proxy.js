@@ -26,6 +26,8 @@ exports.login = function(user, callback) {
             "Accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, */*;q=0.8",
             "User - Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36",
             "Accept - Encoding": "gzip, deflate, sdch",
+            "Origin": "http://172.18.1.48",
+            "Referer": "http://172.18.1.48/seeyon/index.jsp",
             "Accept - Language": "zh-CN,zh;q=0.8"
         }
     };
@@ -102,7 +104,7 @@ exports.getArticle = function(id) {
         host: "172.18.1.48",
         port: "80",
         method: "GET",
-        path: "/seeyon/bulData.do?method=userView&spaceId=&id="+id,
+        path: "/seeyon/bulData.do?method=userView&spaceId=&id=" + id,
         headers: {
             "Pragma": "no - cache",
             "Cache - Control": "no - cache",
