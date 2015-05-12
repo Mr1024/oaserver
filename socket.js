@@ -3,6 +3,10 @@ var path = require('path');
 var url = require('url');
 var fs = require('fs');
 var io = require('socket.io');
+var model = require('./model');
+var dbcon = require('./config');
+model.openDB(dbcon);
+model.bind("users");
 var server = http.createServer(function(req, res) {
     var reqURL = req.url;
     var reqHeader = req.headers;
@@ -45,14 +49,34 @@ socket.on('connection', function(socket) {
 
     //获取账户信息
     socket.on("getInfoReq", function(data) {
-    	console.log(data);
-    	var username= data.name;
-    	var cookie=data.cookie;
-    	var lastId= data.lastId;
-    	if(cookie=="123"){
-    		socket.emit("getInfoRes",{name:username,password:"123",lastId:"123"});
-    	}else{
-    		socket.emit("getInfoRes",{});
-    	}
+        console.log(data);
+        var username = data.name;
+        var cookie = data.cookie;
+        var lastId = data.lastId;
+        if (cookie == "123") {
+            socket.emit("getInfoRes", {
+                name: username,
+                password: "123",
+                lastId: "123"
+            });
+        } else {
+            socket.emit("getInfoRes", {});
+        }
+    });
+    //保存用户信息
+    socket.on("saveUserReq", function(data) {
+        model.findOne(data, function(result) {
+            console.log(result);
+            if (result.status == 1) {
+                if (result.items != null) {
+
+                } else {
+                    model.insert(data, function(result2) {
+                    	console.log(results);
+                    });
+                }
+            }
+        })
+
     });
 });
