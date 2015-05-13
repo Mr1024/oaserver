@@ -3,8 +3,13 @@ var path = require('path');
 var url = require('url');
 var fs = require('fs');
 var io = require('socket.io');
+var crypto = require('crypto');
 var model = require('./model');
 var dbcon = require('./config');
+var mongo = require('mongoskin');
+var db = mongo.db("mongodb://localhost:27017/oa", {
+    native_parser: true
+});
 model.openDB(dbcon);
 model.bind("users");
 var server = http.createServer(function(req, res) {
@@ -46,14 +51,59 @@ socket.on('connection', function(socket) {
         socket.emit("clientstatus", {});
         console.log("lastId" + data);
     });
-
+    socket.on('latestmsgReq', function(data) {
+        db.bind("notice");
+        db["notice"].find({}, {
+            _id: 0,
+            type: 1,
+            sender: 1,
+            pubtime: 1,
+            title: 1,
+            articleId: 1
+        }).limit(data.limit).toArray(function(err, items) {
+            if (err) {
+                items = [];
+            }
+            socket.emit('latestmsgRes', items);
+        })
+    });
+    socket.on('oldmsgReq', function(data) {
+        db.bind("notice");
+        db["notice"].find({}, {
+            _id: 0,
+            type: 1,
+            sender: 1,
+            pubtime: 1,
+            title: 1,
+            articleId: 1
+        }).limit(data.limit).toArray(function(err, items) {
+            if (err) {
+                items = [];
+            }
+            socket.emit('latestmsgRes', items);
+        })
+    });
     //获取账户信息
     socket.on("getInfoReq", function(data) {
         console.log(data);
-        var username = data.name;
-        var cookie = data.cookie;
+        var username = data.username;
+        var sessionId = data.sessionId;
         var lastId = data.lastId;
-        if (cookie == "123") {
+        model.findOne({
+            "username": username
+        }, function(result) {
+            var obj = {};
+            if (result.status == 1) {
+                var item = result.items;
+                if (sessionId == item.sessionId) {
+                    obj.username = item.username;
+                    obj.password = item.password;
+                    obj.sessionId = item.sessionId;
+                }
+            }
+            socket.emit("getInfoRes", obj);
+        });
+        /*if (cookie == "123") {
             socket.emit("getInfoRes", {
                 name: username,
                 password: "123",
@@ -61,22 +111,28 @@ socket.on('connection', function(socket) {
             });
         } else {
             socket.emit("getInfoRes", {});
-        }
+        }*/
     });
     //保存用户信息
     socket.on("saveUserReq", function(data) {
-        model.findOne(data, function(result) {
-            console.log(result);
-            if (result.status == 1) {
-                if (result.items != null) {
-
-                } else {
-                    model.insert(data, function(result2) {
-                    	console.log(results);
-                    });
-                }
-            }
-        })
-
+        var sessionId = createHash();
+        var obj = {
+            "username": data.username,
+            "password": data.password,
+            "sessionId": sessionId
+        };
+        model.update({
+                "username": data.username
+            }, obj,
+            function(result2) {
+                socket.emit("saveUserRes", {
+                    "username": data.username,
+                    "sessionId": sessionId
+                });
+            });
     });
 });
+
+function createHash() {
+    return crypto.createHash('sha1').update(Date.now() + "R" + Math.random()).digest('hex');
+}

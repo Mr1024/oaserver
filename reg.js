@@ -23,16 +23,32 @@ fs.readFile('test.txt', {
         trarry.forEach(function(v, i) {
             var e = tdreg.exec(v);
             if (e) {
-
-                db.notice.save({
+                db.notice.update({
+                    "articleId": e[4]
+                }, {
+                    $set: {
+                        "type": e[1],
+                        "sender": e[2],
+                        "pubtime": e[3],
+                        "pubunixtime": new Date(e[3]).getTime(),
+                        "title": e[5],
+                        "articleId": e[4]
+                    }
+                }, {
+                    upsert: true
+                }, function(result) {
+                    console.log(result);
+                });
+                /*db.notice.save({
                     "type": e[1],
                     "sender": e[2],
                     "pubtime": e[3],
+                    "pubunixtime": new Date(e[3]).getTime(),
                     "title": e[5],
-                    "articleId":e[4]
+                    "articleId": e[4]
                 }, function(err, tiem) {
 
-                });
+                });*/
             }
         });
 

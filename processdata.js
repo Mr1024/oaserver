@@ -16,18 +16,19 @@ exports.getNotice = function(data) {
                 "type": e[1],
                 "sender": e[2],
                 "pubtime": e[3],
+                "pubunixtime": new Date(e[3]).getTime(),
                 "title": e[5],
                 "articleId": e[4]
             }, function(err, item) {
-            	if(!err){
-            		proxy.getArticle(e[4])
-            	}else{
-            		console.log(err);
-            	}
+                if (!err) {
+                    proxy.getArticle(e[4])
+                } else {
+                    console.log(err);
+                }
             });
         }
     });
 };
-exports.saveArticle=function(data){
-	
+exports.saveArticle = function(data) {
+
 }

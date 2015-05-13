@@ -17,25 +17,30 @@ exports.insert = function(value, callback) {
     if (db) {
         if (dbcollection) {
             db[dbcollection].save(value, function(err, item) {
+                console.log(err);
                 if (err) {
                     return callback({
                         status: 0,
                         message: 'fail'
                     });
                 }
-                return callback(null,item);
+                return callback(null, item);
             });
         }
     }
 };
-exports.find = function(query, callback) {
+exports.find = function(query, options, callback) {
+    if (typeof options == "function") {
+        callback = options;
+        options = {};
+    }
     if (db) {
         if (dbcollection) {
             if (typeof query == 'function') {
                 callback = query;
                 query = {};
             }
-            db[dbcollection].find(query).toArray(function(err, items) {
+            db[dbcollection].find(query, options).toArray(function(err, items) {
                 if (err) {
                     return callback({
                         status: 0,
@@ -59,8 +64,8 @@ exports.findOne = function(query, callback) {
                 callback = query;
                 query = {};
             }
-            db[dbcollection].findOne(query,function(err,item){
-            	if (err) {
+            db[dbcollection].findOne(query, function(err, item) {
+                if (err) {
                     return callback({
                         status: 0,
                         message: 'fail'
@@ -80,9 +85,11 @@ exports.update = function(query, value, callback) {
     if (db) {
         if (dbcollection) {
             var set = {
-                set: value
+                $set: value
             };
-            db[dbcollection].update(query, set, function(err) {
+            db[dbcollection].update(query, set, {
+                upsert: true
+            }, function(err) {
                 if (err) {
                     return callback({
                         status: 0,
