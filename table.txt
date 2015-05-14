@@ -1,0 +1,391 @@
+<tbody id="bodyIDmessageList" class="table-body">
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-12 16:57</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-4938426759131279822', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|6856512889525977577','0')" title="苑俊娟发布公告:《关于参加学生、幼儿平安人身意外伤害保险的通知》">
+											
+											
+												苑俊娟发布公告:《关于参加学生、幼儿平安人身意外伤害保险的通知》
+											
+										</a>
+										
+											<span id="-4938426759131279822Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-4938426759131279822Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-4938426759131279822', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">知识管理</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('6910756042810999592')">潘子荻</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-12 14:50</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('3011756701332885080', '', 'show');getA8Top().openDocument('message.link.doc.open|2426118421526561408','0')" title="新建了一个文档《中国网信网工作简报（2015年第12期）.doc》">
+											
+											
+												新建了一个文档《中国网信网工作简报（2015年第12期）.doc》
+											
+										</a>
+										
+											<span id="3011756701332885080Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="3011756701332885080Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('3011756701332885080', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-11 11:05</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-8786825929034609939', '', 'show');getA8Top().openDocument('message.link.bbs.open|-5719103386134360101','0')" title="陆颖发布讨论:《5月11日质量监测日报》">
+											
+											
+												陆颖发布讨论:《5月11日质量监测日报》
+											
+										</a>
+										
+											<span id="-8786825929034609939Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-8786825929034609939Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-8786825929034609939', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-08 16:07</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-6174927675570501375', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|9174848379805713817','0')" title="彭谆发布公告:《关于胡鑫同志任前公示的公告》">
+											
+											
+												彭谆发布公告:《关于胡鑫同志任前公示的公告》
+											
+										</a>
+										
+											<span id="-6174927675570501375Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-6174927675570501375Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-6174927675570501375', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('3633970672117565504')">吕超</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-08 15:18</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-7496868119039358413', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-3698162441063674330','0')" title="吕超发布公告:《关于新华网踢毽子比赛的通知》">
+											
+											
+												吕超发布公告:《关于新华网踢毽子比赛的通知》
+											
+										</a>
+										
+											<span id="-7496868119039358413Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-7496868119039358413Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-7496868119039358413', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('5478801791237505870')">费丽丽</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 17:16</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-6864025461155085294', '', 'show');getA8Top().openDocument('message.link.bul.alreadyaudit|-6542436729517879388|2015-05-07 17:16:14.382','0')" title="费丽丽发布公告:《关于收取2015年医疗保险报销单据的通知》">
+											
+											
+												费丽丽发布公告:《关于收取2015年医疗保险报销单据的通知》
+											
+										</a>
+										
+											<span id="-6864025461155085294Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-6864025461155085294Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-6864025461155085294', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 16:15</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('8442787332174792822', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|1500343688238223301','0')" title="苑俊娟发布公告:《关于转发中央纪委《关于八起违反中央八项规定精神问题的通报》的通知》">
+											
+											
+												苑俊娟发布公告:《关于转发中央纪委《关于八起违反中央八项规定精神问题的通报》的...
+											
+										</a>
+										
+											<span id="8442787332174792822Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="8442787332174792822Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('8442787332174792822', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('875885604296149137')">薛峰</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 10:03</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-5978164976518149019', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-2370611094889279684','0')" title="薛峰发布公告:《新华社2015年职工乒乓球比赛通知》">
+											
+											
+												薛峰发布公告:《新华社2015年职工乒乓球比赛通知》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('4450014745990416231')">黄小会</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 08:34</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('2235793389019221399', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-4551468571921332417','0')" title="黄小会发布公告:《关于开展新入职员工培训的通知》">
+											
+											
+												黄小会发布公告:《关于开展新入职员工培训的通知》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-05 16:18</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('6163933645493715943', '', 'show');getA8Top().openDocument('message.link.news.assessor.audit|-3741968938103715242|2015-05-05 16:18:32.663','0')" title="夏欣发布新闻:《田舒斌同志与公司青年员工代表座谈交流》">
+											
+											
+												夏欣发布新闻:《田舒斌同志与公司青年员工代表座谈交流》
+											
+										</a>
+										
+											<span id="6163933645493715943Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="6163933645493715943Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('6163933645493715943', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">知识管理</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('6910756042810999592')">潘子荻</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-05 15:57</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-348926661950353821', '', 'show');getA8Top().openDocument('message.link.doc.open|1647904821262304155','0')" title="新建了一个文档《中国网信网工作简报（2015年第11期）.doc》">
+											
+											
+												新建了一个文档《中国网信网工作简报（2015年第11期）.doc》
+											
+										</a>
+										
+											<span id="-348926661950353821Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-348926661950353821Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-348926661950353821', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:13</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('1105689250227244086', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-2388216650230578479','0')" title="苑俊娟修改了公告:《关于规范公司员工着装的通知》">
+											
+											
+												苑俊娟修改了公告:《关于规范公司员工着装的通知》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:09</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-6411082816176240441', '', 'show');getA8Top().openDocument('message.link.news.assessor.audit|-3741968938103715242|2015-05-04 17:09:34.677','0')" title="夏欣发布新闻:《田舒斌同志与公司青年员工代表座谈交流》">
+											
+											
+												夏欣发布新闻:《田舒斌同志与公司青年员工代表座谈交流》
+											
+										</a>
+										
+											<span id="-6411082816176240441Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-6411082816176240441Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-6411082816176240441', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:09</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-4224311639340334475', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-2388216650230578479','0')" title="苑俊娟发布公告:《关于规范公司员工着装的通知》">
+											
+											
+												苑俊娟发布公告:《关于规范公司员工着装的通知》
+											
+										</a>
+										
+											<span id="-4224311639340334475Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-4224311639340334475Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-4224311639340334475', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:05</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-8250277454459811193', '', 'show');getA8Top().openDocument('message.link.news.assessor.audit|-3741968938103715242|2015-05-04 17:05:05.171','0')" title="夏欣发布新闻:《田舒斌同志与公司青年员工座谈交流》">
+											
+											
+												夏欣发布新闻:《田舒斌同志与公司青年员工座谈交流》
+											
+										</a>
+										
+											<span id="-8250277454459811193Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-8250277454459811193Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-8250277454459811193', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-30 13:39</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-152579613942988414', '', 'show');getA8Top().openDocument('message.link.news.assessor.audit|-655162469197787955|2015-04-30 13:39:25.475','0')" title="夏欣发布新闻:《公司主办2015健康中国盛典暨《健康解码》开放合作大会举行》">
+											
+											
+												夏欣发布新闻:《公司主办2015健康中国盛典暨《健康解码》开放合作大会举行》
+											
+										</a>
+										
+											<span id="-152579613942988414Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-152579613942988414Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-152579613942988414', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-30 09:05</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-2681321692165943434', '', 'show');getA8Top().openDocument('message.link.bbs.open|-6105729491070137244','0')" title="陆颖发布讨论:《4月30日质量监测日报》">
+											
+											
+												陆颖发布讨论:《4月30日质量监测日报》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-30 09:03</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('7772264587697471663', '', 'show');getA8Top().openDocument('message.link.bbs.open|1544057495119807491','0')" title="陆颖发布讨论:《4月24日质量监测日报》">
+											
+											
+												陆颖发布讨论:《4月24日质量监测日报》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">知识管理</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5908773953067138496')">孙炎</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-29 22:40</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('6734426727086115771', '', 'show');getA8Top().openDocument('message.link.doc.open|8383548788397851334','0')" title="新建了一个文档《地方频道采编工作周报（2015年第15期）.pdf》">
+											
+											
+												新建了一个文档《地方频道采编工作周报（2015年第15期）.pdf》
+											
+										</a>
+										
+											<span id="6734426727086115771Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="6734426727086115771Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('6734426727086115771', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('5123772426990142804')">胡栋</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-29 18:45</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-5485770423867128029', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|7367118107199425299','0')" title="胡栋发布公告:《2015年新华社第一期新闻采编人员资格培训班报到通知》">
+											
+											
+												胡栋发布公告:《2015年新华社第一期新闻采编人员资格培训班报到通知》
+											
+										</a>
+										
+											<span id="-5485770423867128029Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-5485770423867128029Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-5485770423867128029', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>

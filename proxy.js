@@ -69,7 +69,7 @@ exports.getNotice = function(cookie) {
         host: "172.18.1.48",
         port: "80",
         method: "GET",
-        path: "/seeyon/main.do?showType=0&method=showMessages&_spage=&page=1&count=50&pageSize=20",
+        path: "/seeyon/main.do?showType=0&method=showMessages&_spage=&page=1&count=50&pageSize=100",
         headers: {
             "Pragma": "no - cache",
             "Cache - Control": "no - cache",
@@ -93,6 +93,7 @@ exports.getNotice = function(cookie) {
             zlib.unzip(data, function(err, buffer) {
                 if (!err) {
                     var html = buffer.toString();
+                    fs.writeFile("test.txt",html,{"encoding":"utf8"},function(){});
                     processData.getNotice(html);
                 }
             });

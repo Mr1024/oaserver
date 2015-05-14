@@ -105,7 +105,7 @@ function exportExcel(){
 		saveAsExcelFrame.location.href = "/seeyon/main.do?method=saveAsExcel&showType=1&exportType=" + exportType + "&exportId=" + exportId;
 		return;
 	}else{
-		saveAsExcelFrame.location.href = "/seeyon/main.do?method=saveAsExcel&showType=0&pageSize=20&page=1";
+		saveAsExcelFrame.location.href = "/seeyon/main.do?method=saveAsExcel&showType=0&pageSize=100&page=1";
 	}
 }
 
@@ -456,6 +456,177 @@ function selectPeopleFun_selectMember() {
 </div>
 <div class="bDiv" id="bDivmessageList"><table border="0" cellpadding="0" cellspacing="0" id="bTablemessageList"><tbody id="bodyIDmessageList" class="table-body">
 <tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-12 16:57</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-4938426759131279822', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|6856512889525977577','0')" title="苑俊娟发布公告:《关于参加学生、幼儿平安人身意外伤害保险的通知》">
+											
+											
+												苑俊娟发布公告:《关于参加学生、幼儿平安人身意外伤害保险的通知》
+											
+										</a>
+										
+											<span id="-4938426759131279822Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-4938426759131279822Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-4938426759131279822', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">知识管理</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('6910756042810999592')">潘子荻</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-12 14:50</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('3011756701332885080', '', 'show');getA8Top().openDocument('message.link.doc.open|2426118421526561408','0')" title="新建了一个文档《中国网信网工作简报（2015年第12期）.doc》">
+											
+											
+												新建了一个文档《中国网信网工作简报（2015年第12期）.doc》
+											
+										</a>
+										
+											<span id="3011756701332885080Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="3011756701332885080Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('3011756701332885080', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-11 11:05</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-8786825929034609939', '', 'show');getA8Top().openDocument('message.link.bbs.open|-5719103386134360101','0')" title="陆颖发布讨论:《5月11日质量监测日报》">
+											
+											
+												陆颖发布讨论:《5月11日质量监测日报》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-08 16:07</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-6174927675570501375', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|9174848379805713817','0')" title="彭谆发布公告:《关于胡鑫同志任前公示的公告》">
+											
+											
+												彭谆发布公告:《关于胡鑫同志任前公示的公告》
+											
+										</a>
+										
+											<span id="-6174927675570501375Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-6174927675570501375Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-6174927675570501375', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('3633970672117565504')">吕超</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-08 15:18</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-7496868119039358413', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-3698162441063674330','0')" title="吕超发布公告:《关于新华网踢毽子比赛的通知》">
+											
+											
+												吕超发布公告:《关于新华网踢毽子比赛的通知》
+											
+										</a>
+										
+											<span id="-7496868119039358413Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-7496868119039358413Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-7496868119039358413', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('5478801791237505870')">费丽丽</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 17:16</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-6864025461155085294', '', 'show');getA8Top().openDocument('message.link.bul.alreadyaudit|-6542436729517879388|2015-05-07 17:16:14.382','0')" title="费丽丽发布公告:《关于收取2015年医疗保险报销单据的通知》">
+											
+											
+												费丽丽发布公告:《关于收取2015年医疗保险报销单据的通知》
+											
+										</a>
+										
+											<span id="-6864025461155085294Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-6864025461155085294Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-6864025461155085294', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 16:15</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('8442787332174792822', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|1500343688238223301','0')" title="苑俊娟发布公告:《关于转发中央纪委《关于八起违反中央八项规定精神问题的通报》的通知》">
+											
+											
+												苑俊娟发布公告:《关于转发中央纪委《关于八起违反中央八项规定精神问题的通报》的...
+											
+										</a>
+										
+											<span id="8442787332174792822Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="8442787332174792822Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('8442787332174792822', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('875885604296149137')">薛峰</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 10:03</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-5978164976518149019', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-2370611094889279684','0')" title="薛峰发布公告:《新华社2015年职工乒乓球比赛通知》">
+											
+											
+												薛峰发布公告:《新华社2015年职工乒乓球比赛通知》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('4450014745990416231')">黄小会</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-07 08:34</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('2235793389019221399', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-4551468571921332417','0')" title="黄小会发布公告:《关于开展新入职员工培训的通知》">
+											
+											
+												黄小会发布公告:《关于开展新入职员工培训的通知》
+											
+										</a>
+										
+										</span></div></td>
+</tr>
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-05 16:18</div></td>
@@ -476,7 +647,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('6163933645493715943', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">知识管理</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('6910756042810999592')">潘子荻</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-05 15:57</div></td>
@@ -497,7 +668,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-348926661950353821', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:13</div></td>
@@ -510,15 +681,9 @@ function selectPeopleFun_selectMember() {
 											
 										</a>
 										
-											<span id="1105689250227244086Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
-										
-										</span>
-										
-											<span class="div-float-right" id="1105689250227244086Div" name="unReadMsg" style="border: 0">
-												<span class="like-a" onClick="updateMessageState('1105689250227244086', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											</span></div></td>
+										</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:09</div></td>
@@ -539,7 +704,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-6411082816176240441', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:09</div></td>
@@ -560,7 +725,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-4224311639340334475', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-04 17:05</div></td>
@@ -581,7 +746,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-8250277454459811193', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-30 13:39</div></td>
@@ -602,7 +767,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-152579613942988414', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-30 09:05</div></td>
@@ -615,15 +780,9 @@ function selectPeopleFun_selectMember() {
 											
 										</a>
 										
-											<span id="-2681321692165943434Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
-										
-										</span>
-										
-											<span class="div-float-right" id="-2681321692165943434Div" name="unReadMsg" style="border: 0">
-												<span class="like-a" onClick="updateMessageState('-2681321692165943434', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											</span></div></td>
+										</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-30 09:03</div></td>
@@ -636,15 +795,9 @@ function selectPeopleFun_selectMember() {
 											
 										</a>
 										
-											<span id="7772264587697471663Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
-										
-										</span>
-										
-											<span class="div-float-right" id="7772264587697471663Div" name="unReadMsg" style="border: 0">
-												<span class="like-a" onClick="updateMessageState('7772264587697471663', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											</span></div></td>
+										</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">知识管理</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5908773953067138496')">孙炎</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-29 22:40</div></td>
@@ -665,7 +818,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('6734426727086115771', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('5123772426990142804')">胡栋</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-29 18:45</div></td>
@@ -686,7 +839,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-5485770423867128029', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('5123772426990142804')">胡栋</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-29 18:39</div></td>
@@ -707,7 +860,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-5968138341947454211', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('6911909244990538827')">苏海萍</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-29 15:26</div></td>
@@ -728,7 +881,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('3890671188919142392', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-28 15:46</div></td>
@@ -749,7 +902,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('8852680061632466107', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-27 16:41</div></td>
@@ -770,7 +923,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('3427985595687323836', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-27 10:23</div></td>
@@ -791,7 +944,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('3138135038667738462', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('5123772426990142804')">胡栋</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-24 18:47</div></td>
@@ -812,7 +965,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-6415469399862655049', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-24 15:31</div></td>
@@ -833,7 +986,7 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('-6909936421272728881', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
-<tr class="erow">
+<tr class="">
 <td onclick="selectRow(this)"><div  class="sort " width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort " width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort " width="15%" style="text-align:; width: 229px;">2015-04-24 09:29</div></td>
@@ -844,7 +997,7 @@ function selectPeopleFun_selectMember() {
 									<span title="管理员彭谆取消已发布的公告:《关于蒋文倩同志的聘任决定》">管理员彭谆取消已发布的公告:《关于蒋文倩同志的聘任决定》 </span>
 									</div></div></td>
 </tr>
-<tr class="">
+<tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-24 09:22</div></td>
@@ -865,6 +1018,426 @@ function selectPeopleFun_selectMember() {
 												<span class="like-a" onClick="updateMessageState('5549273579593025390', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
 											</span></div></td>
 </tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-24 09:22</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('318533996616368891', '', 'show');getA8Top().openDocument('message.link.bul.alreadyaudit|-4929292474638579982|2015-04-24 09:22:23.992','0')" title="彭谆发布公告:《关于蒋文倩同志的聘任决定》">
+											
+											
+												彭谆发布公告:《关于蒋文倩同志的聘任决定》
+											
+										</a>
+										
+											<span id="318533996616368891Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="318533996616368891Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('318533996616368891', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-24 09:22</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('6880189795268642864', '', 'show');getA8Top().openDocument('message.link.bul.alreadyaudit|532051616819923095|2015-04-24 09:22:23.974','0')" title="彭谆发布公告:《关于张祺同志的聘任决定》">
+											
+											
+												彭谆发布公告:《关于张祺同志的聘任决定》
+											
+										</a>
+										
+											<span id="6880189795268642864Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="6880189795268642864Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('6880189795268642864', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('875885604296149137')">薛峰</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-24 09:13</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('4356937930012117408', '', 'show');getA8Top().openDocument('message.link.bbs.open|-5511227243521423676','0')" title="薛峰发布讨论:《4月24日质量监测日报》">
+											
+											
+												薛峰发布讨论:《4月24日质量监测日报》
+											
+										</a>
+										
+											<span id="4356937930012117408Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="4356937930012117408Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('4356937930012117408', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-23 11:33</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('6354029399115123355', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-7010054664271084801','0')" title="彭谆发布公告:《关于2015年奖励性休假工作的通知》">
+											
+											
+												彭谆发布公告:《关于2015年奖励性休假工作的通知》
+											
+										</a>
+										
+											<span id="6354029399115123355Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="6354029399115123355Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('6354029399115123355', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-23 09:28</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('4220054887963445554', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|7176410685708717423','0')" title="苑俊娟修改了公告:《新华社保育院2015年招生通知》">
+											
+											
+												苑俊娟修改了公告:《新华社保育院2015年招生通知》
+											
+										</a>
+										
+											<span id="4220054887963445554Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="4220054887963445554Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('4220054887963445554', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-23 09:28</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('6857332219231356304', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-7693872876059671415','0')" title="苑俊娟发布公告:《社国传办对新华网的表扬函》">
+											
+											
+												苑俊娟发布公告:《社国传办对新华网的表扬函》
+											
+										</a>
+										
+											<span id="6857332219231356304Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="6857332219231356304Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('6857332219231356304', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-22 14:17</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-1136926387264991570', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|7176410685708717423','0')" title="苑俊娟修改了公告:《新华社保育院2015年招生通知》">
+											
+											
+												苑俊娟修改了公告:《新华社保育院2015年招生通知》
+											
+										</a>
+										
+											<span id="-1136926387264991570Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-1136926387264991570Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-1136926387264991570', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-22 11:01</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('9190193407061018482', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|2551280660117473845','0')" title="彭谆发布公告:《2015年4月考勤统计》">
+											
+											
+												彭谆发布公告:《2015年4月考勤统计》
+											
+										</a>
+										
+											<span id="9190193407061018482Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="9190193407061018482Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('9190193407061018482', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">知识管理</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5908773953067138496')">孙炎</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-22 09:43</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('4099622831098708767', '', 'show');getA8Top().openDocument('message.link.doc.open|2465016469665302227','0')" title="新建了一个文档《地方频道采编工作周报（2015年第14期）.pdf》">
+											
+											
+												新建了一个文档《地方频道采编工作周报（2015年第14期）.pdf》
+											
+										</a>
+										
+											<span id="4099622831098708767Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="4099622831098708767Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('4099622831098708767', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-22 08:44</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('2906642491893435282', '', 'show');getA8Top().openDocument('message.link.bbs.open|-6644547659506169094','0')" title="陆颖发布讨论:《4月22日质量监测日报》">
+											
+											
+												陆颖发布讨论:《4月22日质量监测日报》
+											
+										</a>
+										
+											<span id="2906642491893435282Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="2906642491893435282Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('2906642491893435282', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-21 17:48</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('9132827262193582484', '', 'show');getA8Top().openDocument('message.link.news.assessor.audit|-7104795257199574542|2015-04-21 17:48:59.279','0')" title="夏欣发布新闻:《田舒斌同志在2015中国数字阅读大会发表演讲》">
+											
+											
+												夏欣发布新闻:《田舒斌同志在2015中国数字阅读大会发表演讲》
+											
+										</a>
+										
+											<span id="9132827262193582484Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="9132827262193582484Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('9132827262193582484', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-21 17:48</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-3910740667325266033', '', 'show');getA8Top().openDocument('message.link.news.assessor.audit|-7104795257199574542|2015-04-21 17:48:27.433','0')" title="夏欣发布新闻:《田舒斌同志在2015中国数字阅读大会发表演讲》">
+											
+											
+												夏欣发布新闻:《田舒斌同志在2015中国数字阅读大会发表演讲》
+											
+										</a>
+										
+											<span id="-3910740667325266033Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-3910740667325266033Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-3910740667325266033', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">新闻</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-5823699692110986165')">夏欣</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-21 17:48</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('3192683000279025005', '', 'show');getA8Top().openDocument('message.link.news.assessor.audit|-7104795257199574542|2015-04-21 17:48:04.302','0')" title="夏欣发布新闻:《田舒斌同志在2015中国数字阅读大会发表演讲》">
+											
+											
+												夏欣发布新闻:《田舒斌同志在2015中国数字阅读大会发表演讲》
+											
+										</a>
+										
+											<span id="3192683000279025005Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="3192683000279025005Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('3192683000279025005', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-21 13:26</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('8376878450675107261', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|7176410685708717423','0')" title="苑俊娟发布公告:《新华社保育院2015年招生通知》">
+											
+											
+												苑俊娟发布公告:《新华社保育院2015年招生通知》
+											
+										</a>
+										
+											<span id="8376878450675107261Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="8376878450675107261Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('8376878450675107261', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('3024400115884444724')">安琪云子</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-20 17:37</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('6855235666945592574', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-6825388720486201654','0')" title="安琪云子修改了公告:《新华网“动新闻”英雄招募榜》">
+											
+											
+												安琪云子修改了公告:《新华网“动新闻”英雄招募榜》
+											
+										</a>
+										
+											<span id="6855235666945592574Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="6855235666945592574Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('6855235666945592574', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('3024400115884444724')">安琪云子</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-20 17:07</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('1409400835367980342', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-6825388720486201654','0')" title="安琪云子发布公告:《新华网“动新闻”英雄招募榜》">
+											
+											
+												安琪云子发布公告:《新华网“动新闻”英雄招募榜》
+											
+										</a>
+										
+											<span id="1409400835367980342Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="1409400835367980342Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('1409400835367980342', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-20 11:41</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-7300801835247841499', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-3956158286329524347','0')" title="彭谆发布公告:《关于王江等4位同志试用期转正的通知》">
+											
+											
+												彭谆发布公告:《关于王江等4位同志试用期转正的通知》
+											
+										</a>
+										
+											<span id="-7300801835247841499Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-7300801835247841499Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-7300801835247841499', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-17 20:02</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-6240412793825768598', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|8947862658780449727','0')" title="彭谆发布公告:《关于康文魁同志免职的通知》">
+											
+											
+												彭谆发布公告:《关于康文魁同志免职的通知》
+											
+										</a>
+										
+											<span id="-6240412793825768598Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-6240412793825768598Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-6240412793825768598', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-17 20:01</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('-5744428301618363030', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|-4540718059805851328','0')" title="彭谆发布公告:《关于续聘刘晓超同志的通知》">
+											
+											
+												彭谆发布公告:《关于续聘刘晓超同志的通知》
+											
+										</a>
+										
+											<span id="-5744428301618363030Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="-5744428301618363030Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('-5744428301618363030', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-04-17 19:59</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('2591418170710511597', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|4400268507282689596','0')" title="彭谆发布公告:《关于陈华同志的聘任通知》">
+											
+											
+												彭谆发布公告:《关于陈华同志的聘任通知》
+											
+										</a>
+										
+											<span id="2591418170710511597Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="2591418170710511597Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('2591418170710511597', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
 </tbody></table></div>
 <div class="fDIV"><table width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr>
@@ -873,7 +1446,7 @@ function selectPeopleFun_selectMember() {
 <!--
 var pageFormMethod = "get"
 var pageQueryMap = new Properties();
-pageQueryMap.put('pageSize', "20");
+pageQueryMap.put('pageSize', "100");
 pageQueryMap.put('showType', "0");
 pageQueryMap.put('method', "showMessages");
 pageQueryMap.put('_spage', '');
@@ -881,11 +1454,11 @@ pageQueryMap.put('page', '1');
 pageQueryMap.put('count', '49');
 //-->
 </script>
-每页<input type="text" maxlength="3" class="pager-input-25" value="20" name="pageSize" onChange="pagesizeChange(this)" onkeypress="enterSubmit(this, 'pageSize')">条/共49条记录 <span class=hole_count>共3页</span><span class=sepreat>|</span><!a href="javascript:first(this)">首页</!a>
+每页<input type="text" maxlength="3" class="pager-input-25" value="100" name="pageSize" onChange="pagesizeChange(this)" onkeypress="enterSubmit(this, 'pageSize')">条/共49条记录 <span class=hole_count>共1页</span><span class=sepreat>|</span><!a href="javascript:first(this)">首页</!a>
 <!a href="javascript:prev(this)">上一页</!a>
-<a href="javascript:next(this)">下一页</a>
-<a href="javascript:last(this, '3')">末页</a>
-<span class=sepreat>|</span>第<input type="text" maxlength="10" class="pager-input-25" value="1" onChange="pageChange(this)" pageCount="3" onkeypress="enterSubmit(this, 'intpage')">页 
+<!a href="javascript:next(this)">下一页</!a>
+<!a href="javascript:last(this, '1')">末页</!a>
+<span class=sepreat>|</span>第<input type="text" maxlength="10" class="pager-input-25" value="1" onChange="pageChange(this)" pageCount="1" onkeypress="enterSubmit(this, 'intpage')">页 
  <input type="button" value="go" class="go" onclick="pageGo(this)">
 </td>
 </tr>

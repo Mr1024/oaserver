@@ -60,6 +60,8 @@ socket.on('connection', function(socket) {
             pubtime: 1,
             title: 1,
             articleId: 1
+        }).sort({
+            pubunixtime: -1
         }).limit(data.limit).toArray(function(err, items) {
             if (err) {
                 items = [];
@@ -69,19 +71,27 @@ socket.on('connection', function(socket) {
     });
     socket.on('oldmsgReq', function(data) {
         db.bind("notice");
-        db["notice"].find({}, {
-            _id: 0,
-            type: 1,
-            sender: 1,
-            pubtime: 1,
-            title: 1,
-            articleId: 1
-        }).limit(data.limit).toArray(function(err, items) {
+        db["notice"].findOne({
+            articleId: data.articleId
+        }, function(err, item) {
             if (err) {
-                items = [];
+                socket.emit('latestmsgRes', new Array());
+            } else {
+                //console.log(item._id);
+                db["notice"].find({
+                    pubunixtime: {
+                        "$lt": item.pubunixtime
+                    }
+                }).sort({
+                    "pubunixtime": -1
+                }).limit(data.limit).toArray(function(err, items) {
+                    if (err) {
+                        items = [];
+                    }
+                    socket.emit('latestmsgRes', items);
+                });
             }
-            socket.emit('latestmsgRes', items);
-        })
+        });
     });
     //获取账户信息
     socket.on("getInfoReq", function(data) {
@@ -93,7 +103,7 @@ socket.on('connection', function(socket) {
             "username": username
         }, function(result) {
             var obj = {};
-            if (result.status == 1) {
+            if (result.status == 1 && result.items != null) {
                 var item = result.items;
                 if (sessionId == item.sessionId) {
                     obj.username = item.username;
@@ -119,7 +129,8 @@ socket.on('connection', function(socket) {
         var obj = {
             "username": data.username,
             "password": data.password,
-            "sessionId": sessionId
+            "sessionId": sessionId,
+            "random": Math.random()
         };
         model.update({
                 "username": data.username

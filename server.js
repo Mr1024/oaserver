@@ -1,94 +1,202 @@
-var http = require("http");
-var querystring = require("querystring");
-var fs = require("fs");
-var iconv = require('iconv-lite');
-var zlib = require('zlib');
-var BufferHelper = require('bufferhelper');
-var cookie = "JSESSIONID=7646F2A2A84EF72708D2FBE5C1DE3BD5;login.locale=zh_CN";
-var formDate = querystring.stringify({
-    "UserAgentFrom": "pc",
-    "login.timezone": "",
-    "login.username": "zhangyizhong",
-    "login.password": "zhangyizhong",
-    "authorization": "",
-    "dogSessionId": ""
+var http = require('http');
+var path = require('path');
+var url = require('url');
+var fs = require('fs');
+var io = require('socket.io');
+var crypto = require('crypto');
+var model = require('./model');
+var dbcon = require('./config');
+var mongo = require('mongoskin');
+var db = mongo.db("mongodb://localhost:27017/oa", {
+    native_parser: true
 });
-var options = {
-    host: "172.18.1.48",
-    port: "80",
-    method: "POST",
-    path: "/seeyon/login/proxy",
-    headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Content-Length": formDate.length,
-        "Pragma": "no - cache",
-        "Cache - Control": "no - cache",
-        "Accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, */*;q=0.8",
-        "User - Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36",
-        "Accept - Encoding": "gzip, deflate, sdch",
-        "Accept - Language": "zh-CN,zh;q=0.8"
-    }
-};
-var formRequst = http.request(options, function(res) {
-    res.setEncoding('utf8');
-    res.on('data', function(chunk) {
-        console.log('Response: ' + chunk);
-    });
-    res.on("end", function() {
-        var resheader = res.headers;
-        var cookieArry = [];
-        if (resheader.loginok == 'ok') {
-            resheader['set-cookie'].forEach(function(value) {
-                var reg = /^([^;]*)/g;
-                if (reg.test(value)) {
-                    cookieArry.push(RegExp.$1);
-                }
+model.openDB(dbcon);
+model.bind("users");
+var server = http.createServer(function(req, res) {
+    var reqURL = req.url;
+    var reqHeader = req.headers;
+    var pathname = url.parse(reqURL).pathname;
+    var filePath = path.join(process.cwd(), path.normalize(pathname.replace(/\.\./g, '')));
+    var ext = path.extname(pathname);
+    fs.stat(filePath, function(err, stat) {
+        if (!err) {
+            var raw = fs.createReadStream(filePath);
+            res.writeHead(200, {
+                'Content-Type': 'text/html'
             });
-            cookie = cookieArry.join(";");
-            console.log(cookie);
-            getMsg(cookie);
+            raw.pipe(res);
+        } else {
+            res.writeHead(200, {
+                'Content-Type': 'text/html'
+            });
+            res.end("hello");
         }
     });
-});
-formRequst.write(formDate);
-formRequst.end();
-/*getMsg(cookie);*/
 
-function getMsg(cookie) {
-    var msgoptions = {
-        host: "172.18.1.48",
-        port: "80",
-        method: "GET",
-        path: "/seeyon/main.do?showType=0&method=showMessages&_spage=&page=1&count=50&pageSize=20",
-        headers: {
-            "Pragma": "no - cache",
-            "Cache - Control": "no - cache",
-            "Accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, */*;q=0.8",
-            "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36",
-            "Accept-Encoding": "gzip, deflate, sdch",
-            "Accept-Language": "zh-CN,zh;q=0.8",
-            "Referer": "http://172.18.1.48/seeyon/main.do?method=left&fromPortal=false",
-            "Cookie": cookie
-        }
-    };
-    var msgReq = http.get(msgoptions, function(res) {
-        var chunks = [],
-            size = 0;
-        var buffer = new BufferHelper();
-        res.on('data', function(chunk) {
-            chunks.push(chunk);
-            console.log(chunk.length);
-            size += chunk.length;
-        });
-        res.on('end', function() {
-            var data = Buffer.concat(chunks, size);
-            zlib.unzip(data, function(err, buffer) {
-                if (!err) {
-                    var html = buffer.toString();
-                    fs.writeFile("test.txt",buffer,{"encoding":"utf8"},function(){});
-                    console.log(html);
+    /*res.end('<h1>Hello Socket Lover!</h1>');*/
+});
+server.listen(8080);
+var socket = io.listen(server);
+socket.on('connection', function(socket) {
+    socket.on('latestmsgReq', function(data) {
+        db.bind("notice");
+        /*if (typeof data.lastmsgId != "undefined") {
+            db["notice"].findOne({
+                articleId: data.lastmsgId
+            }, function(err, item) {
+                if (err) {
+                    socket.emit('latestmsgRes', new Array());
+                } else {
+                    //console.log(item._id);
+                    db["notice"].find({
+                        pubunixtime: {
+                            "$gt": item.pubunixtime
+                        }
+                    }).sort({
+                        "pubunixtime": -1
+                    }).limit(data.limit).toArray(function(err, items) {
+                        if (err) {
+                            items = [];
+                        }
+                        socket.emit('latestmsgRes', items);
+                    });
                 }
             });
-        })
+        } else {*/
+        db["notice"].find({}, {
+            _id: 0,
+            type: 1,
+            sender: 1,
+            pubtime: 1,
+            title: 1,
+            articleId: 1
+        }).sort({
+            pubunixtime: -1
+        }).limit(data.limit).toArray(function(err, items) {
+            if (err) {
+                items = [];
+            }
+            socket.emit('latestmsgRes', items);
+        });
+        /*}*/
+        console.log(data);
+        /*db["notice"].find({}, {
+            _id: 0,
+            type: 1,
+            sender: 1,
+            pubtime: 1,
+            title: 1,
+            articleId: 1
+        }).sort({
+            pubunixtime: -1
+        }).limit(data.limit).toArray(function(err, items) {
+            if (err) {
+                items = [];
+            }
+            socket.emit('latestmsgRes', items);
+        })*/
     });
+    socket.on('unredmsgReq', function(data) {
+        console.log(data);
+        db.bind("notice");
+        db["notice"].findOne({
+            articleId: data
+        }, function(err, item) {
+            if (err) {
+                socket.emit('unredmsgRes', {
+                    type: "tip",
+                    data: []
+                });
+            } else {
+                //console.log(item._id);
+                db["notice"].find({
+                    pubunixtime: {
+                        "$gt": item.pubunixtime
+                    }
+                }).sort({
+                    "pubunixtime": -1
+                }).limit(data.limit).toArray(function(err, items) {
+                    if (err) {
+                        items = [];
+                    }
+                    socket.emit('unredmsgRes', {
+                        type: "tip",
+                        data: items
+                    });
+                });
+            }
+        });
+    });
+    socket.on('oldmsgReq', function(data) {
+        db.bind("notice");
+        db["notice"].findOne({
+            articleId: data.articleId
+        }, function(err, item) {
+            console.log(item);
+            if (err) {
+                socket.emit('oldmsgRes', new Array());
+            } else {
+                //console.log(item._id);
+                db["notice"].find({
+                    pubunixtime: {
+                        "$lt": item.pubunixtime
+                    }
+                }).sort({
+                    "pubunixtime": -1
+                }).limit(data.limit).toArray(function(err, items) {
+                    console.log(items);
+                    if (err) {
+                        items = [];
+                    }
+                    socket.emit('oldmsgRes', items);
+                });
+            }
+        });
+    });
+    //获取账户信息
+    socket.on("getInfoReq", function(data) {
+        console.log(data);
+        var username = data.username;
+        var sessionId = data.sessionId;
+        var lastId = data.lastId;
+        model.findOne({
+            "username": username
+        }, function(result) {
+            var obj = {};
+            if (result.status == 1 && result.items != null) {
+                var item = result.items;
+                if (sessionId == item.sessionId) {
+                    obj.username = item.username;
+                    obj.password = item.password;
+                    obj.sessionId = item.sessionId;
+                }
+            }
+            socket.emit("getInfoRes", obj);
+        });
+    });
+    //保存用户信息
+    socket.on("saveUserReq", function(data) {
+        var sessionId = createHash();
+        var obj = {
+            "username": data.username,
+            "password": data.password,
+            "sessionId": sessionId,
+            "random": Math.random()
+        };
+        model.update({
+                "username": data.username
+            }, obj,
+            function(result2) {
+                socket.emit("saveUserRes", {
+                    "username": data.username,
+                    "sessionId": sessionId
+                });
+            });
+    });
+
+
+});
+
+function createHash() {
+    return crypto.createHash('sha1').update(Date.now() + "R" + Math.random()).digest('hex');
 }
