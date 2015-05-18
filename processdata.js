@@ -44,7 +44,7 @@ exports.getNotice = function(data) {
                     if (item.status == 1) {
                         proxy.getArticle(e[4])
                     } else {
-                        console.log(item);
+                        //console.log(item);
                     }
                 });
         }

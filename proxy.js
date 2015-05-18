@@ -2,6 +2,7 @@ var http = require("http");
 var querystring = require("querystring");
 var fs = require("fs");
 var zlib = require('zlib');
+var crypto = require('crypto');
 var processData = require('./processdata');
 var cookie;
 exports.login = function(user, callback) {
@@ -90,10 +91,14 @@ exports.getNotice = function(cookie) {
         });
         res.on('end', function() {
             var data = Buffer.concat(chunks, size);
+            var md5str = crypto.createHash('md5').update(data).digest('base64');
+            console.log(md5str);
             zlib.unzip(data, function(err, buffer) {
                 if (!err) {
                     var html = buffer.toString();
-                    fs.writeFile("test.txt",html,{"encoding":"utf8"},function(){});
+                    fs.writeFile("test.txt", html, {
+                        "encoding": "utf8"
+                    }, function() {});
                     processData.getNotice(html);
                 }
             });

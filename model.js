@@ -90,7 +90,6 @@ exports.update = function(query, value, callback) {
             db[dbcollection].update(query, set, {
                 upsert: true
             }, function(err) {
-            	console.log(err);
                 if (err) {
                     return callback({
                         status: 0,

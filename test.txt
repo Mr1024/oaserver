@@ -457,6 +457,48 @@ function selectPeopleFun_selectMember() {
 <div class="bDiv" id="bDivmessageList"><table border="0" cellpadding="0" cellspacing="0" id="bTablemessageList"><tbody id="bodyIDmessageList" class="table-body">
 <tr class="erow">
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-9127289784637763902')">彭谆</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-15 10:41</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('7998853374705880167', '', 'show');getA8Top().openDocument('message.link.bul.alreadyauditing|589243602548507969','0')" title="彭谆发布公告:《新华网内容管理系统基本发稿考核成绩（2015年5月）》">
+											
+											
+												彭谆发布公告:《新华网内容管理系统基本发稿考核成绩（2015年5月）》
+											
+										</a>
+										
+											<span id="7998853374705880167Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="7998853374705880167Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('7998853374705880167', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">讨论</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-6067774553363888692')">陆颖</span></div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-15 08:14</div></td>
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
+										
+										<a class="title-more" style="color: #000" href="javascript:updateMessageState('5145138498771373573', '', 'show');getA8Top().openDocument('message.link.bbs.open|1539250331127859549','0')" title="陆颖发布讨论:《5月15日质量监测日报》">
+											
+											
+												陆颖发布讨论:《5月15日质量监测日报》
+											
+										</a>
+										
+											<span id="5145138498771373573Span" name="unReadMsg" class="icon_com news_com" style="display: inline-block;"></span>
+										
+										</span>
+										
+											<span class="div-float-right" id="5145138498771373573Div" name="unReadMsg" style="border: 0">
+												<span class="like-a" onClick="updateMessageState('5145138498771373573', '')">[标记已读]&nbsp;&nbsp;&nbsp;&nbsp;</span>
+											</span></div></td>
+</tr>
+<tr class="erow">
+<td onclick="selectRow(this)"><div  class="sort cursor-hand" width="9%" style="text-align:; width: 229px;">公告</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="16%" style="text-align:; width: 229px;"><span class="like-a" onClick="showV3XMemberCard('-7938651236721867839')">苑俊娟</span></div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="15%" style="text-align:; width: 229px;">2015-05-12 16:57</div></td>
 <td onclick="selectRow(this)"><div  class="sort cursor-hand" width="60%" style="text-align:; width: 229px;"><span class="div-float">
@@ -1451,10 +1493,10 @@ pageQueryMap.put('showType', "0");
 pageQueryMap.put('method', "showMessages");
 pageQueryMap.put('_spage', '');
 pageQueryMap.put('page', '1');
-pageQueryMap.put('count', '49');
+pageQueryMap.put('count', '51');
 //-->
 </script>
-每页<input type="text" maxlength="3" class="pager-input-25" value="100" name="pageSize" onChange="pagesizeChange(this)" onkeypress="enterSubmit(this, 'pageSize')">条/共49条记录 <span class=hole_count>共1页</span><span class=sepreat>|</span><!a href="javascript:first(this)">首页</!a>
+每页<input type="text" maxlength="3" class="pager-input-25" value="100" name="pageSize" onChange="pagesizeChange(this)" onkeypress="enterSubmit(this, 'pageSize')">条/共51条记录 <span class=hole_count>共1页</span><span class=sepreat>|</span><!a href="javascript:first(this)">首页</!a>
 <!a href="javascript:prev(this)">上一页</!a>
 <!a href="javascript:next(this)">下一页</!a>
 <!a href="javascript:last(this, '1')">末页</!a>
