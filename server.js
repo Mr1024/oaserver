@@ -2,6 +2,8 @@ var http = require('http');
 var path = require('path');
 var url = require('url');
 var fs = require('fs');
+var child=require('child_process');
+var noticeevent = require('./noticeevent');
 var io = require('socket.io');
 var crypto = require('crypto');
 var model = require('./model');
@@ -10,6 +12,7 @@ var mongo = require('mongoskin');
 var db = mongo.db("mongodb://localhost:27017/oa", {
     native_parser: true
 });
+child.fork('./start.js');
 model.openDB(dbcon);
 model.bind("users");
 var server = http.createServer(function(req, res) {

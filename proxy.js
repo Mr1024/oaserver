@@ -4,7 +4,10 @@ var fs = require("fs");
 var zlib = require('zlib');
 var crypto = require('crypto');
 var processData = require('./processdata');
+var noticeevent = require('./noticeevent');
 var cookie;
+var lastNotice = null;
+var cacheMD5 = "";
 exports.login = function(user, callback) {
     var formDate = querystring.stringify({
         "UserAgentFrom": "pc",
@@ -48,15 +51,21 @@ exports.login = function(user, callback) {
                 cookie = cookieArry.join(";");
                 callback(null, cookie);
             } else {
+                console.log(resheader.loginerror);
                 if (resheader.loginerror == 1) {
                     callback({
                         code: 1,
                         msg: "用户不存在"
                     });
-                } else {
+                } else if (resheader.loginerror == 2) {
                     callback({
                         code: 2,
                         msg: "密码错误"
+                    })
+                } else if (resheader.loginerror == 7) {
+                    callback({
+                        code: 7,
+                        msg: "人数过多"
                     })
                 }
             }
@@ -65,7 +74,93 @@ exports.login = function(user, callback) {
     formRequst.write(formDate);
     formRequst.end();
 };
-exports.getNotice = function(cookie) {
+exports.getNotice = function(page, limit, cookie) {
+    var _t = this;
+    var msgoptions = {
+        host: "172.18.1.48",
+        port: "80",
+        method: "GET",
+        //path: '/seeyon/main.do?showType=0&method=showMessages&_spage=&page=' + page + '&pageSize=' + limit,
+        path: '/seeyon/bulData.do?spaceType=1&method=bulMore&homeFlag=true&fragmentId=6026562696704573593&spaceId=&where=space&_spage=&&page=' + page + '&count=458&pageSize=' + limit,
+        headers: {
+            "Pragma": "no - cache",
+            "Cache - Control": "no - cache",
+            "Accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, */*;q=0.8",
+            "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36",
+            "Accept-Encoding": "gzip, deflate, sdch",
+            "Accept-Language": "zh-CN,zh;q=0.8",
+            "Connection": "keep-alive",
+            //"Referer": "http://172.18.1.48/seeyon/main.do?method=left&fromPortal=false",
+            "Referer": "http://172.18.1.48/seeyon/bulData.do?method=bulMore&from=top&orgType=account&spaceType=1&fragmentId=6026562696704573593&ordinal=0",
+            "Cookie": cookie
+        }
+    };
+    console.log("请求第" + page + "次");
+    var msgReq = http.get(msgoptions, function(res) {
+        console.log("接收到第" + page + "次响应");
+        var chunks = [],
+            size = 0;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            size += chunk.length;
+        });
+        res.on('end', function() {
+            var data = Buffer.concat(chunks, size);
+            var md5str = crypto.createHash('md5').update(data).digest('base64');
+            if (cacheMD5 != md5str) {
+                cacheMD5 = md5str;
+            } else {
+                noticeevent.wait();
+                return
+            }
+            zlib.unzip(data, function(err, buffer) {
+                if (!err) {
+                    var html = buffer.toString();
+                    fs.writeFile("test.txt", html, {
+                        "encoding": "utf8"
+                    }, function() {});
+                    console.log("page=" + page);
+                    if (page == 1) {
+                        processData.getlastNotice(function(item) {
+                            if (item[0]) {
+                                lastNotice = item[0];
+                            }
+                            processData.getNotice(html, lastNotice, cookie, function(tag) {
+                                if (tag) {
+                                    setTimeout(function() {
+                                        _t.getNotice(++page, limit, cookie);
+                                    }, 10000);
+
+                                } else {
+                                    noticeevent.wait();
+                                }
+                            });
+                        });
+                    } else {
+                        processData.getNotice(html, lastNotice, cookie, function(tag) {
+                            if (tag) {
+                                setTimeout(function() {
+                                    _t.getNotice(++page, limit, cookie);
+                                }, 10000);
+                            } else {
+                                noticeevent.wait();
+                            }
+                        });
+                    }
+                } else {
+                    noticeevent.login(function(cookie) {
+                        _t.getNotice(page, limit, cookie);
+                    });
+                }
+            });
+        })
+    }).on('error', function(e) {
+        console.log("错误：" + e.message);
+    });
+
+};
+
+exports.checkNotice = function(cookie) {
     var msgoptions = {
         host: "172.18.1.48",
         port: "80",
@@ -105,7 +200,8 @@ exports.getNotice = function(cookie) {
         })
     });
 };
-exports.getArticle = function(id) {
+exports.getArticle = function(id,cookie) {
+    var _t = this;
     var msgoptions = {
         host: "172.18.1.48",
         port: "80",
@@ -134,7 +230,15 @@ exports.getArticle = function(id) {
             zlib.unzip(data, function(err, buffer) {
                 if (!err) {
                     var html = buffer.toString();
+                    fs.writeFile("article.txt", html, {
+                        "encoding": "utf8"
+                    }, function() {});
                     processData.saveArticle(html);
+                } else {
+                    noticeevent.login(function(newcookie) {
+                        cookie = newcookie;
+                        _t.getArticle(id,cookie);
+                    });
                 }
             });
         })
