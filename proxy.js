@@ -200,7 +200,7 @@ exports.checkNotice = function(cookie) {
         })
     });
 };
-exports.getArticle = function(id,cookie) {
+exports.getArticle = function(id, cookie) {
     var _t = this;
     var msgoptions = {
         host: "172.18.1.48",
@@ -233,14 +233,78 @@ exports.getArticle = function(id,cookie) {
                     fs.writeFile("article.txt", html, {
                         "encoding": "utf8"
                     }, function() {});
-                    processData.saveArticle(html);
+                    processData.saveArticle(html,id, cookie);
                 } else {
                     noticeevent.login(function(newcookie) {
                         cookie = newcookie;
-                        _t.getArticle(id,cookie);
+                        _t.getArticle(id, cookie);
                     });
                 }
             });
         })
     });
-}
+};
+exports.getFile = function(obj, cookie) {
+    obj.url = obj.url.replace(/amp;/g, "");
+    /*if(obj.type=="annex"){
+        var jsessionid=cookie.split(";")[0];
+        var sessionid = jsessionid.split("=");
+        obj.url=obj.url.replace(/\?/, ";jsessionid="+sessionid[1]+"?");
+        obj.url=obj.url+"&";
+    }*/
+    var _t = this;
+    var msgoptions = {
+        host: "172.18.1.48",
+        port: "80",
+        method: "GET",
+        path: obj.url,
+        headers: {
+            "Pragma": "no - cache",
+            "Cache - Control": "no - cache",
+            "Accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, */*;q=0.8",
+            "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36",
+            "Accept-Encoding": "gzip, deflate, sdch",
+            "Accept-Language": "zh-CN,zh;q=0.8",
+            "Connection": "keep-alive",
+            "Cookie": cookie
+        }
+    };
+    var msgReq = http.get(msgoptions, function(res) {
+        var chunks = [],
+            size = 0,
+            headers = res.headers;
+        res.on('data', function(chunk) {
+            chunks.push(chunk);
+            size += chunk.length;
+        });
+        res.on('end', function() {
+            var data = Buffer.concat(chunks, size);
+            obj.contenttype = headers["content-type"];
+                obj.content = data;
+                processData.saveFile(obj, cookie);
+            if (obj.type == "image") {
+               /* obj.contenttype = headers["content-type"];
+                obj.content = data;
+                processData.saveFile(obj, cookie);*/
+            } else {
+                /*zlib.unzip(data, function(err, buffer) {
+                    if (!err) {
+                        var html = buffer.toString();
+                        obj.contenttype = headers["content-type"];
+                        obj.content = html;
+                        fs.writeFile("file.txt", html, {
+                            "encoding": "utf8"
+                        }, function() {});
+                        processData.saveFile(obj, cookie);
+                    } else {
+                        noticeevent.login(function(newcookie) {
+                            cookie = newcookie;
+                            _t.getFile(obj, cookie);
+                        });
+                    }
+                });*/
+            }
+
+        })
+    });
+};

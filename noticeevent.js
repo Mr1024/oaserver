@@ -9,12 +9,46 @@ model.openDB(dbcon);
 var cookie = '';
 exports.login = function login(callback) {
     var _t = this;
-    model.bind('users');
+    db.bind('users');
+    db['users'].findOne({
+        random: {
+            "$gt": Math.random()
+        }
+    }, function(err, data) {
+        console.log(data);
+        if (!err && data) {
+            proxy.login({
+                username: data.username,
+                password: data.password
+            }, function(err, cookie) {
+                if (!err) {
+                    console.log("登陆成功，监控中");
+                    if (callback) {
+                        callback(cookie);
+                    } else {
+                        proxy.getNotice(1, 10, cookie);
+                    }
+
+                } else {
+                    if (err.code == 7) {
+                        console.log("人数过多，重新登录");
+                        login(callback);
+                    }
+                    //login();
+                }
+            });
+        } else {
+            console.log("筛选登陆用户");
+            login(callback);
+        }
+    });
+    /*model.bind('users');
     model.findOne({
         random: {
             "$gt": Math.random()
         }
     }, function(data) {
+        console.log(data.items);
         if (data.items) {
             console.log(data.items.username);
             proxy.login({
@@ -41,7 +75,7 @@ exports.login = function login(callback) {
             console.log("筛选登陆用户");
             login(callback);
         }
-    });
+    });*/
 };
 exports.wait = function() {
     console.log("进入等待");
