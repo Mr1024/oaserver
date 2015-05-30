@@ -34,7 +34,7 @@ var edocDetailURL = "/seeyon/edocController.do";
 <meta HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
 <html>
 <head>
-<title>新华社2013年职工暑期接待方案</title>
+<title>西藏自治区网信办、北京市医院管理局的感谢信</title>
 
 <meta HTTP-EQUIV="Expires" CONTENT="-1">
 <meta HTTP-EQUIV="Cache-Control" CONTENT="no-store"> 
@@ -118,7 +118,7 @@ ol{margin: auto;}
 
 
 </head>
-<body scroll="no" onkeydown="listenerKeyESC()" onload="loadSignatures('9194184759781573764',false);">
+<body scroll="no" onkeydown="listenerKeyESC()" onload="loadSignatures('5516186874501943171',false);">
 <input type="hidden" id="disableTrail" name="disableTrail" value="1">
 <div class="scrollList">
 
@@ -167,7 +167,7 @@ ol{margin: auto;}
 												 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 													 <tr>
 													 	<td width="35">&nbsp;</td>
-														<td align="center" width="90%" class="view-bulletin-title">新华社2013年职工暑期接待方案</td>
+														<td align="center" width="90%" class="view-bulletin-title">西藏自治区网信办、北京市医院管理局的感谢信</td>
 													  	<td width="35">&nbsp;</td>
 													  </tr>
 												 </table>
@@ -183,7 +183,7 @@ ol{margin: auto;}
 															<td class="font-12px" nowrap="nowrap" align="" width="5%">发布部门:&nbsp;&nbsp;</td>
 															<td class="font-12px" width="25%">综合部</td>
 															<td class="font-12px" nowrap="nowrap" align="" width="5%">阅读量:&nbsp;&nbsp;</td>
-											                <td class="font-12px" width="25%">105</td>
+											                <td class="font-12px" width="25%">65</td>
 														</tr>
 														
 														<tr>
@@ -191,12 +191,12 @@ ol{margin: auto;}
 														    <td class="font-12px">苑俊娟</td>
 														    
 														    <td class="font-12px" nowrap="nowrap" align="">发布时间:&nbsp;&nbsp;</td>
-															<td class="font-12px">2013-06-25 13:56</td>
+															<td class="font-12px">2015-05-29 15:02</td>
 															
 															<td class="font-12px" nowrap="nowrap" align="">发布范围:&nbsp;&nbsp;</td>
 														    <td nowrap="nowrap">
 														    	
-														    	<div title="新华网股份有限公司" class="font-12px">新华网股份有限公司</div>
+														    	<div title="新华网" class="font-12px">新华网</div>
 														    </td>
 														</tr>
 														
@@ -209,48 +209,16 @@ ol{margin: auto;}
 		
 											<tr>
 												<td width="100%" height="100%" style="padding-bottom: 6px;" valign="top" colspan="6">
-										            <div style='display:none'><input type='hidden' name='bodyType' id='bodyType' value='HTML'><input type="hidden" name="bodyCreateDate" value="2013-06-05 11:22:55"></div>
+										            <div style='display:none'><input type='hidden' name='bodyType' id='bodyType' value='HTML'><input type="hidden" name="bodyCreateDate" value="2015-05-29 15:02:54"></div>
 <input id="contentNameId" type="hidden" name="contentName" value="">
 <div id ='htmlContentDiv'>
 <table align="center" border="0" cellspacing="0" cellpadding="0" class="body-detail-HTML" id="col-contentTable">
   <tr>
-     <td class="padding355"><input id=inputPosition type=text style=border:0px;width:1px;height:1px onfocus=javascript:return false; onclick=return false;/><div id=iSignatureHtmlDiv name=iSignatureHtmlDiv  style=border:0px;width:1px;height:1px></div><div class="contentText" id="content"><p style="TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt" class="MsoNormal" align="center"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 宋体; FONT-SIZE: 22pt" lang="EN-US">2013</span></strong><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 宋体; FONT-SIZE: 22pt">年职工暑期休养接待方案<span lang="EN-US"><o:p></o:p></span></span></strong></p>
-<p style="TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt" class="MsoNormal" align="center"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 宋体; FONT-SIZE: 14pt; mso-bidi-font-size: 18.0pt" lang="EN-US"><o:p>&nbsp;</o:p></span></strong></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 29.5pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 1.96" class="MsoNormal"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">一、接待范围<span lang="EN-US"><o:p></o:p></span></span></strong></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">１、新华社总社及分社职工和离退休职工到京外三所休假。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">２、新华社职工家属到京外三所度假。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 29.5pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 1.96" class="MsoNormal"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">二、时间安排<span lang="EN-US"><o:p></o:p></span></span></strong></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">养马岛休养所、青岛休养所接待时间为<span lang="EN-US">6</span>月至<span lang="EN-US">10</span>月。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">北戴河休养所从<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="1" month="7" year="2013"><span lang="EN-US">7</span>月<span lang="EN-US">1</span>日</st1:chsdate>至<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="21" month="7" year="2013"><span lang="EN-US">7</span>月<span lang="EN-US">21</span>日</st1:chsdate>接待职工奖励休假，<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="23" month="6" year="2013"><span lang="EN-US">6</span>月<span lang="EN-US">23</span>日</st1:chsdate>至<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="28" month="6" year="2013"><span lang="EN-US">6</span>月<span lang="EN-US">28</span>日</st1:chsdate>、<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="21" month="7" year="2013"><span lang="EN-US">7</span>月<span lang="EN-US">21</span>日</st1:chsdate>至<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="30" month="8" year="2013"><span lang="EN-US">8</span>月<span lang="EN-US">30</span>日</st1:chsdate>接待职工个人休假。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 29.5pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 1.96" class="MsoNormal"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">三、具体接待办法<span lang="EN-US"><o:p></o:p></span></span></strong></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">1</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、职工到京外三个休养所休假，由管理服务中心接待处组织安排，负责代购单程火车票，各休养所负责代购返程火车票。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">2</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、总社休假人员统一在接待处报名并根据报名情况分批组织到京外三个休养所休假。北戴河休养所每批<span lang="EN-US">5</span>天，青岛、养马岛休养所每批<span lang="EN-US">7</span>天。分社职工休假可直接与各休养所联系。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">3</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、到京外三个休养所休假的职工（凭新华社有效证件）按成本价收费，职工直系亲属（配偶、子女、父母）按优惠价格收取床位费，其他人员按市场价收取床位费。职工本人不去让家属去休假时也需携带职工本人的新华社有效证件复印件，不带证件复印件者不享受家属优惠价，按对外收取床位费。青岛休养所因床位较少，为满足更多职工想到青岛休假的愿望，到青岛休养所的每名职工限带两名家属（只安排一间房），并且只允许为自己报名，不可为他人代报。休假人员应遵守各休养所的管理规定，确保您休假期间的安全。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">4</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、接待处<strong style="mso-bidi-font-weight: normal">报名地址：原七号楼（红二楼后）三层<span lang="EN-US">316</span>房间，联系电话：<span lang="EN-US">63073349</span>。报名时间：<span lang="EN-US">OA</span>网发布本方案三个工作日之后开始报名（即<st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="5" month="6" year="2013"><span lang="EN-US">2013</span>年<span lang="EN-US">6</span>月<span lang="EN-US">5</span>日</st1:chsdate>，早<span lang="EN-US">08:00</span>），至每批名额报满为止。总社职工暑期休养只接待现场填表报名，不接待其他方式报名。<span lang="EN-US"><o:p></o:p></span></strong></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">报名后请在您休假日前<span lang="EN-US">20</span>天携带休假人员身份证到接待处（原七号楼三层<span lang="EN-US">316</span>房间）预交购票费，儿童若无身份证需带户口薄。休假人员因故不能按期休假的，需提前与接待处联系取消休假，如已购票再取消休假者由本人自行到车站窗口退票。分社休假人员与休养所联系好后自行购票前往。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">5</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、离退休职工到京外三所休假，请与老干部局联系报名，由老干部局按分批名额汇总统一报接待处。为保证离退休职工的安全，报名休假的老同志要身体健康，年龄较大或身体较弱的同志须由亲属陪同，并负责老人休假期间的起居、洗漱、行走及乘车的安全和照顾，老干部局有关同志协助做好报名休假老同志的思想工作，以免发生意外事件。离退休老同志除携带新华社有效证件外，还要携带身份证和老年证以备休假地景点门票优惠用。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">6</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、由于休养所车位有限和床位紧张等原因，不提倡自驾车和自购票前往休养所休假，但确有特殊情况需自驾车或自购票前往休养所休假需提前报名，由接待处统一安排床位。自驾车前往的职工途中及休假期间驾车外出要注意安全，以免发生意外。<strong style="mso-bidi-font-weight: normal"><span lang="EN-US"><o:p></o:p></span></strong></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 29.5pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 1.96" class="MsoNormal"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">四、说明<span lang="EN-US"><o:p></o:p></span></span></strong></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">1</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、职工亲属同一房间临时加床收费<span lang="EN-US">40</span>元，子女随床收费<span lang="EN-US">20</span>元。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">2</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、身高<st1:chmetcnv w:st="on" unitname="米" sourcevalue="1.4" hasspace="False" negative="False" numbertype="1" tcsc="0"><span lang="EN-US">1.4</span>米</st1:chmetcnv>以上儿童的交通费、餐费按成人标准收取。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">3</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、到休养所的交通费、旅游景点门票费自理。交通费、景点门票费收费标准按当地实际价格确定，不另外加收费用。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">4</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、去三所休假的全部人员必须携带身份证，无身份证的儿童需携带户口薄，以备订票及乘车所需。社内职工还需携带新华社有效证件，有记者证者也需携带以备休假地景点门票优惠用。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">5</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、因暑期京外三所房源非常紧张，凡是去休养所休假的总社职工须到接待处报名，有序组织安排。分社休养的同志须按照休假计划表规定的批次时间与休养所联系休假；无特殊情况不能提前或者错后延长休假时间，以免影响其他职工的正常休假。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">6</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、为响应国家低碳环保号召，各休养所不再提供一次性洗漱用品，请休假人员自备洗漱用具。<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 29.5pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 1.96" class="MsoNormal"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">五、联系电话<span lang="EN-US"><o:p></o:p></span></span></strong></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">接待处：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>63073349<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>63073453<o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">北戴河休养所：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>0335-4269888<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>4269299<o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">青岛休养所：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0532-83861996<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>83875766<o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 30pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">养马岛休养所：<span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>0535-4763731<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>4763960<o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 29.5pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 1.96" class="MsoNormal"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US"><o:p>&nbsp;</o:p></span></strong></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 29.5pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 1.96" class="MsoNormal"><strong style="mso-bidi-font-weight: normal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">附</span></strong><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">：<span lang="EN-US">1</span>、休养所收费标准表<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 60pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 4.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">2</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、休养所暑期接待计划表<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; TEXT-INDENT: 60pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly; mso-char-indent-count: 4.0" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US">3</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">、休假人员报名表<span lang="EN-US"><o:p></o:p></span></span></p>
-<p style="LINE-HEIGHT: 26pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
-<p style="LINE-HEIGHT: 26pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US"><o:p>&nbsp;</o:p></span></p>
-<p style="LINE-HEIGHT: 26pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US"><o:p>&nbsp;</o:p></span></p>
-<p style="LINE-HEIGHT: 26pt; MARGIN: 0cm 0cm 0pt; mso-line-height-rule: exactly" class="MsoNormal"><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体" lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体">机关管理服务中心接待处<span lang="EN-US"><o:p></o:p></span></span></p>
-<span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA" lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">二</span><span style="FONT-FAMILY: 宋体; FONT-SIZE: 15pt; mso-ascii-font-family: 仿宋_GB2312; mso-font-kerning: 1.0pt; mso-bidi-font-family: 宋体; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">〇</span><span style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 15pt; mso-hansi-font-family: 宋体; mso-font-kerning: 1.0pt; mso-bidi-font-family: 仿宋_GB2312; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">一三年五月二十七日</span></div></td>
+     <td class="padding355"><input id=inputPosition type=text style=border:0px;width:1px;height:1px onfocus=javascript:return false; onclick=return false;/><div id=iSignatureHtmlDiv name=iSignatureHtmlDiv  style=border:0px;width:1px;height:1px></div><div class="contentText" id="content"><p><img border="0" width="700" height="900" alt="" src="/seeyon/fileUpload.do?method=showRTE&amp;fileId=-8449399815641480048&amp;createDate=2015-05-29&amp;type=image" /></p>
+<p><img border="0" width="700" height="496" alt="" src="/seeyon/fileUpload.do?method=showRTE&amp;fileId=5291524280282269273&amp;createDate=2015-05-29&amp;type=image" /></p>
+<p><img border="0" width="700" height="840" alt="" src="/seeyon/fileUpload.do?method=showRTE&amp;fileId=-6977759394841671465&amp;createDate=2015-05-29&amp;type=image" /></p>
+<p>&nbsp;</p>
+<p><img border="0" width="700" height="517" alt="" src="/seeyon/fileUpload.do?method=showRTE&amp;fileId=5353487845022387431&amp;createDate=2015-05-29&amp;type=image" /></p></div></td>
   <tr>
 </table>
 </div>
@@ -264,11 +232,6 @@ var webRoot = "http://172.18.1.48:80/seeyon"
 												</td>
 											</tr>
 							
-											
-												<tr>
-													<td align="center">
-													</td>
-												</tr>
 												
 						
 											<tr id="attachmentTr" style="display: none">
@@ -287,7 +250,6 @@ var webRoot = "http://172.18.1.48:80/seeyon"
 <!--
 var theToShowAttachments = new ArrayList();
 var downloadURL = "/seeyon/fileUpload.do";
-theToShowAttachments.add(new Attachment('4365670710994161336','9194184759781573764','9194184759781573764','7','0','新华社2013年职工收费标准及休假计划.doc','application/msword','2013-06-25 13:56:51','121856','-1604850378260920416','',null,'doc','doc.gif',true,'true'));
 //-->
 </script>
 <div style="display:none;">
@@ -296,7 +258,7 @@ theToShowAttachments.add(new Attachment('4365670710994161336','91941847597815737
 
 	
 															<script type="text/javascript">				
-																showAttachment('9194184759781573764', 0, 'attachmentTr', '');				
+																showAttachment('5516186874501943171', 0, 'attachmentTr', '');				
 															</script>
 														</td>
 													 </tr>
@@ -320,7 +282,6 @@ theToShowAttachments.add(new Attachment('4365670710994161336','91941847597815737
 <!--
 var theToShowAttachments = new ArrayList();
 var downloadURL = "/seeyon/fileUpload.do";
-theToShowAttachments.add(new Attachment('4365670710994161336','9194184759781573764','9194184759781573764','7','0','新华社2013年职工收费标准及休假计划.doc','application/msword','2013-06-25 13:56:51','121856','-1604850378260920416','',null,'doc','doc.gif',true,'true'));
 //-->
 </script>
 <div style="display:none;">
@@ -329,7 +290,7 @@ theToShowAttachments.add(new Attachment('4365670710994161336','91941847597815737
 
 	
 															<script type="text/javascript">		
-																showAttachment('9194184759781573764', 2, 'attachment2Tr', '');		
+																showAttachment('5516186874501943171', 2, 'attachment2Tr', '');		
 															</script>
 														</td>
 													 </tr>

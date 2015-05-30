@@ -15,14 +15,13 @@ exports.login = function login(callback) {
             "$gt": Math.random()
         }
     }, function(err, data) {
-        console.log(data);
         if (!err && data) {
             proxy.login({
                 username: data.username,
                 password: data.password
             }, function(err, cookie) {
                 if (!err) {
-                    console.log("登陆成功，监控中");
+                    console.log("用户"+data.username+"登陆成功，监控中");
                     if (callback) {
                         callback(cookie);
                     } else {
@@ -38,7 +37,7 @@ exports.login = function login(callback) {
                 }
             });
         } else {
-            console.log("筛选登陆用户");
+            console.log("重新选择登陆用户");
             login(callback);
         }
     });
@@ -78,7 +77,7 @@ exports.login = function login(callback) {
     });*/
 };
 exports.wait = function() {
-    console.log("进入等待");
+    console.log("请求完成等待下一轮");
     var _t = this;
     setTimeout(_t.login, 30000);
 };

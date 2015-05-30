@@ -50,7 +50,7 @@ exports.getNotice = function(data, lastNotice, cookie, callback) {
                     upsert: true
                 }, function(err, result) {
                     if (!err && result) {
-                        if (Date.now() - result.pubunixtime < 1000 * 60 * 60 * 8) {
+                        if (Date.now() - result.pubunixtime < 1000 * 60 * 60 * 72) {
                             process.send(result);
                         }
                         proxy.getArticle(result.articleId, cookie);
@@ -100,13 +100,14 @@ exports.saveArticle = function(data, id, cookie) {
     var fileArry = [];
     if (imgArry) {
         imgArry.forEach(function(item, j) {
-            data = data.replace(execimgreg, '$1http://172.18.24.64:8080/images/$3">');
+            if(execimgreg.test(data))
             fileArry.push({
                 id: RegExp.$3,
                 url: RegExp.$2,
                 type: "image"
             });
         });
+        data = data.replace(execimgreg, '$1http://172.18.24.64:8080/images/$3">');
     }
     var annex = data.match(annexReg);
     var annexobj = {};

@@ -95,9 +95,9 @@ exports.getNotice = function(page, limit, cookie) {
             "Cookie": cookie
         }
     };
-    console.log("请求第" + page + "次");
+    process.stdout.write("第" + page + "次请求数据>>>>>>>>>>>>");
     var msgReq = http.get(msgoptions, function(res) {
-        console.log("接收到第" + page + "次响应");
+        process.stdout.write("接收到第" + page + "次响应\n");
         var chunks = [],
             size = 0;
         res.on('data', function(chunk) {
@@ -116,10 +116,9 @@ exports.getNotice = function(page, limit, cookie) {
             zlib.unzip(data, function(err, buffer) {
                 if (!err) {
                     var html = buffer.toString();
-                    fs.writeFile("test.txt", html, {
+                    /*fs.writeFile("test.txt", html, {
                         "encoding": "utf8"
-                    }, function() {});
-                    console.log("page=" + page);
+                    }, function() {});*/
                     if (page == 1) {
                         processData.getlastNotice(function(item) {
                             if (item[0]) {
@@ -233,7 +232,7 @@ exports.getArticle = function(id, cookie) {
                     fs.writeFile("article.txt", html, {
                         "encoding": "utf8"
                     }, function() {});
-                    processData.saveArticle(html,id, cookie);
+                    processData.saveArticle(html, id, cookie);
                 } else {
                     noticeevent.login(function(newcookie) {
                         cookie = newcookie;
@@ -280,12 +279,12 @@ exports.getFile = function(obj, cookie) {
         res.on('end', function() {
             var data = Buffer.concat(chunks, size);
             obj.contenttype = headers["content-type"];
-                obj.content = data;
-                processData.saveFile(obj, cookie);
+            obj.content = data;
+            processData.saveFile(obj, cookie);
             if (obj.type == "image") {
-               /* obj.contenttype = headers["content-type"];
-                obj.content = data;
-                processData.saveFile(obj, cookie);*/
+                /* obj.contenttype = headers["content-type"];
+                 obj.content = data;
+                 processData.saveFile(obj, cookie);*/
             } else {
                 /*zlib.unzip(data, function(err, buffer) {
                     if (!err) {

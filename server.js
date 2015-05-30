@@ -27,7 +27,6 @@ var server = http.createServer(function(req, res) {
             id: id
         }, function(err, data) {
             if (!err) {
-                console.log(data);
                 if (data) {
                     res.writeHead(200, {
                         'Content-Type': data.contenttype
@@ -131,7 +130,7 @@ var socket = io.listen(server);
 socket.on('connection', function(socket) {
     childnotice.on("message", function(data) {
         socket.emit('unreadmsgRes', {
-            type: "tip",
+            type: "notify",
             data: data
         });
     });
@@ -176,7 +175,6 @@ socket.on('connection', function(socket) {
             socket.emit('latestmsgRes', items);
         });
         /*}*/
-        console.log(data);
         /*db["notice"].find({}, {
             _id: 0,
             type: 1,
@@ -228,11 +226,9 @@ socket.on('connection', function(socket) {
         db["notice"].findOne({
             articleId: data.articleId
         }, function(err, item) {
-            console.log(item);
             if (err) {
                 socket.emit('oldmsgRes', new Array());
             } else {
-                //console.log(item._id);
                 db["notice"].find({
                     pubunixtime: {
                         "$lt": item.pubunixtime
@@ -240,7 +236,6 @@ socket.on('connection', function(socket) {
                 }).sort({
                     "pubunixtime": -1
                 }).limit(data.limit).toArray(function(err, items) {
-                    console.log(items);
                     if (err) {
                         items = [];
                     }
@@ -251,7 +246,6 @@ socket.on('connection', function(socket) {
     });
     //获取账户信息
     socket.on("getInfoReq", function(data) {
-        console.log(data);
         var username = data.username;
         var sessionId = data.sessionId;
         var lastId = data.lastId;
@@ -261,8 +255,6 @@ socket.on('connection', function(socket) {
         }, function(err, result) {
             var obj = {};
             if (!err) {
-                console.log(sessionId);
-                console.log(sessionId == result.sessionId);
                 if (sessionId == result.sessionId) {
                     obj.username = result.username;
                     obj.password = result.password;
