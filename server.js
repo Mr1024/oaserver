@@ -13,6 +13,7 @@ var db = mongo.db("mongodb://localhost:27017/oa", {
     native_parser: true
 });
 var childnotice = child.fork('./start.js');
+var users = {};
 model.openDB(dbcon);
 model.bind("users");
 var server = http.createServer(function(req, res) {
@@ -121,9 +122,6 @@ var server = http.createServer(function(req, res) {
             }
         });
     }
-
-
-    /*res.end('<h1>Hello Socket Lover!</h1>');*/
 });
 server.listen(8080);
 var socket = io.listen(server);
@@ -191,18 +189,25 @@ socket.on('connection', function(socket) {
             socket.emit('latestmsgRes', items);
         })*/
     });
-    socket.on('unredmsgReq', function(data) {
+    socket.on('unreadmsgReq', function(data) {
+        if (data.username) {
+            users[data.username] = {
+                lastlogin: Date.now()
+            };
+        }
+        childnotice.send({
+            users: users
+        });
         db.bind("notice");
         db["notice"].findOne({
-            articleId: data
+            articleId: data.lastmsgId
         }, function(err, item) {
-            if (err) {
+            if (err || !item) {
                 socket.emit('unreadmsgRes', {
                     type: "tip",
                     data: []
                 });
             } else {
-                //console.log(item._id);
                 db["notice"].find({
                     pubunixtime: {
                         "$gt": item.pubunixtime
@@ -306,6 +311,17 @@ socket.on('connection', function(socket) {
 
 
 });
+//定时清除users未登录账户
+setInterval(function() {
+    var usercache = {};
+    var time = Date.now();
+    for (var i in users) {
+        if (time - users[i].lastlogin <= 1000 * 60 * 5) {
+            usercache[i] = users[i];
+        }
+    }
+    users = usercache;
+}, 1000 * 60 * 5);
 
 function createHash() {
     return crypto.createHash('sha1').update(Date.now() + "R" + Math.random()).digest('hex');

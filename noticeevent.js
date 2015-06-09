@@ -7,6 +7,10 @@ var model = require('./model');
 var dbcon = require('./config');
 model.openDB(dbcon);
 var cookie = '';
+var users = {};
+process.on('message', function(data) {
+    users = data.users;
+});
 exports.login = function login(callback) {
     var _t = this;
     db.bind('users');
@@ -15,17 +19,17 @@ exports.login = function login(callback) {
             "$gt": Math.random()
         }
     }, function(err, data) {
-        if (!err && data) {
+        if (!err && data && !users.hasOwnProperty(data.username)) {
             proxy.login({
                 username: data.username,
                 password: data.password
             }, function(err, cookie) {
                 if (!err) {
-                    console.log("用户"+data.username+"登陆成功，监控中");
+                    console.log("用户" + data.username + "登陆成功，监控中");
                     if (callback) {
                         callback(cookie);
                     } else {
-                        proxy.getNotice(1, 10, cookie);
+                        proxy.getNotice(1, 100, cookie);
                     }
 
                 } else {
@@ -76,8 +80,10 @@ exports.login = function login(callback) {
         }
     });*/
 };
-exports.wait = function() {
-    console.log("请求完成等待下一轮");
+exports.wait = function(cookie) {
     var _t = this;
-    setTimeout(_t.login, 30000);
+    proxy.logout(cookie, function() {
+        console.log("请求完成等待下一轮");
+        setTimeout(_t.login, 30000);
+    });
 };

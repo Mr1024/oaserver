@@ -74,6 +74,28 @@ exports.login = function(user, callback) {
     formRequst.write(formDate);
     formRequst.end();
 };
+exports.logout = function(cookie, callback) {
+    var options = {
+        host: "172.18.1.48",
+        port: "80",
+        method: "GET",
+        path: '/seeyon/login/logout',
+        headers: {
+            "Pragma": "no - cache",
+            "Cache - Control": "no - cache",
+            "Accept": "text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, */*;q=0.8",
+            "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36",
+            "Accept-Encoding": "gzip, deflate, sdch",
+            "Accept-Language": "zh-CN,zh;q=0.8",
+            "Connection": "keep-alive",
+            "Referer": "http://172.18.1.48/seeyon/main.do?method=index",
+            "Cookie": cookie
+        }
+    };
+    http.get(options, function() {
+        callback();
+    });
+};
 exports.getNotice = function(page, limit, cookie) {
     var _t = this;
     var msgoptions = {
@@ -110,7 +132,7 @@ exports.getNotice = function(page, limit, cookie) {
             if (cacheMD5 != md5str) {
                 cacheMD5 = md5str;
             } else {
-                noticeevent.wait();
+                noticeevent.wait(cookie);
                 return
             }
             zlib.unzip(data, function(err, buffer) {
@@ -131,7 +153,7 @@ exports.getNotice = function(page, limit, cookie) {
                                     }, 10000);
 
                                 } else {
-                                    noticeevent.wait();
+                                    noticeevent.wait(cookie);
                                 }
                             });
                         });
@@ -142,7 +164,7 @@ exports.getNotice = function(page, limit, cookie) {
                                     _t.getNotice(++page, limit, cookie);
                                 }, 10000);
                             } else {
-                                noticeevent.wait();
+                                noticeevent.wait(cookie);
                             }
                         });
                     }

@@ -84,7 +84,7 @@ exports.getlastNotice = function(callback) {
     });
 };
 exports.saveArticle = function(data, id, cookie) {
-    data = '<!doctype html><html lang="zh-cmn-Hans"><head>' + data;
+    data = '<!doctype html><html lang="zh-cmn-Hans" style="height:100%"><head>' + data;
     fs.writeFile("newarticle1.html", data, {
         "encoding": "utf8"
     }, function() {});
@@ -149,7 +149,7 @@ exports.saveArticle = function(data, id, cookie) {
     for (var i in annexobj) {
         annexstr += '<div id="attachmentDiv_' + annexobj[i].id + '" class="attachment_block" style="float: left;height: 18px; line-height: 14px;nowrap=""><img src="http://172.18.1.48/seeyon/common/images/attachmentICON/' + annexobj[i].icon + '" border="0" height="16" width="16" align="absmiddle" style="margin-right: 3px;"><a href="http://172.18.24.64:8080/fileUpload/' + annexobj[i].title + '" title="' + annexobj[i].title + '" download="' + annexobj[i].title + '" style="font-size:12px;color:#007CD2;">' + annexobj[i].title + '(' + annexobj[i].size / 1024 + 'KB)</a>[<a href="172.18.2.64:8080/fileUpload?' + annexobj[i].title + '" download="' + annexobj[i].title + '" style="font-size:12px;color:#007CD2;">下载</a>]&nbsp;<input type="hidden" name="input_file_id" value="-2974606410562058622">&nbsp;&nbsp;</div>';
     }
-    data = data.replace(deloneventReg, '<body');
+    data = data.replace(deloneventReg, '<body style="background-color: #B9D7E1;min-height:100%;"');
     var txt1 = data.replace(deljsReg, '');
     var txt2 = txt1.replace(csshrefReg, '"http://172.18.1.48/seeyon/');
     if (Object.keys(annexobj).length > 0) {
