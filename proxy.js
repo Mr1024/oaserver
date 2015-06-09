@@ -212,9 +212,9 @@ exports.checkNotice = function(cookie) {
             zlib.unzip(data, function(err, buffer) {
                 if (!err) {
                     var html = buffer.toString();
-                    fs.writeFile("test.txt", html, {
+                    /*fs.writeFile("test.txt", html, {
                         "encoding": "utf8"
-                    }, function() {});
+                    }, function() {});*/
                     processData.getNotice(html);
                 }
             });
@@ -251,9 +251,9 @@ exports.getArticle = function(id, cookie) {
             zlib.unzip(data, function(err, buffer) {
                 if (!err) {
                     var html = buffer.toString();
-                    fs.writeFile("article.txt", html, {
+                   /* fs.writeFile("article.txt", html, {
                         "encoding": "utf8"
-                    }, function() {});
+                    }, function() {});*/
                     processData.saveArticle(html, id, cookie);
                 } else {
                     noticeevent.login(function(newcookie) {
