@@ -19,9 +19,6 @@ exports.getNotice = function(data, lastNotice, cookie, callback) {
     var page = pageresult[1];
     var pagecount = pageresult[2];
     var strtable = data.match(tablereg);
-    fs.writeFile("table.txt", strtable, {
-        "encoding": "utf8"
-    }, function() {});
     var trarry = strtable[0].match(trreg);
     var stoptag = false;
     for (var i in trarry) {
@@ -85,9 +82,6 @@ exports.getlastNotice = function(callback) {
 };
 exports.saveArticle = function(data, id, cookie) {
     data = '<!doctype html><html lang="zh-cmn-Hans" style="height:100%"><head>' + data;
-    fs.writeFile("newarticle1.html", data, {
-        "encoding": "utf8"
-    }, function() {});
     var deljsReg = /<script[\d\D]*?<\/\s*script>/gi;
     var csshrefReg = /"\/seeyon\//gi;
     var annexReg = /theToShowAttachments.add\(new Attachment\((.*?)(?=\)\))/gi;
@@ -100,12 +94,12 @@ exports.saveArticle = function(data, id, cookie) {
     var fileArry = [];
     if (imgArry) {
         imgArry.forEach(function(item, j) {
-            if(execimgreg.test(data))
-            fileArry.push({
-                id: RegExp.$3,
-                url: RegExp.$2,
-                type: "image"
-            });
+            if (execimgreg.test(data))
+                fileArry.push({
+                    id: RegExp.$3,
+                    url: RegExp.$2,
+                    type: "image"
+                });
         });
         data = data.replace(execimgreg, '$1http://172.18.24.64:8080/images/$3">');
     }
@@ -177,9 +171,9 @@ exports.saveArticle = function(data, id, cookie) {
 
         }
     });
-    fs.writeFile("newarticle.html", txt2, {
+    /*fs.writeFile("newarticle.html", txt2, {
         "encoding": "utf8"
-    }, function() {});
+    }, function() {});*/
 };
 exports.saveFile = function(obj, cookie) {
     db.bind('file');
@@ -242,4 +236,13 @@ exports.checkNotice = function(data) {
                 });
         }
     });
+};
+exports.getonlineuser = function(html, callback) {
+    callback = callback || function() {};
+    var onlineReg = /showEditImage\('([^']*?)'\)/g;
+    var onlineArry = [];
+    while (onlineReg.exec(html)) {
+        onlineArry.push(RegExp.$1);
+    }
+    callback(onlineArry);
 };

@@ -251,6 +251,7 @@ socket.on('connection', function(socket) {
     });
     //获取账户信息
     socket.on("getInfoReq", function(data) {
+        console.log(data);
         var username = data.username;
         var sessionId = data.sessionId;
         var lastId = data.lastId;
@@ -260,7 +261,7 @@ socket.on('connection', function(socket) {
         }, function(err, result) {
             var obj = {};
             if (!err) {
-                if (sessionId == result.sessionId) {
+                if (result && sessionId == result.sessionId) {
                     obj.username = result.username;
                     obj.password = result.password;
                     obj.sessionId = result.sessionId;
@@ -293,6 +294,7 @@ socket.on('connection', function(socket) {
             $set: {
                 "username": data.username,
                 "password": data.password,
+                "userId": data.userId,
                 "sessionId": sessionId,
                 "random": Math.random()
             }
